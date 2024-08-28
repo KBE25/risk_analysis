@@ -6,8 +6,11 @@
 
 **Author: <a href="https://www.linkedin.com/in/karina-basto-eyzaguirre-203a0445/"> Karina Basto-Eyzaguirre</a>**
 
-
 ## Overview
+This notebook
+
+This project 
+
 This analysis has been conducted as my company has decided to diversify their business portfolio by expanding operations to the aircraft industry and purchasing commercial and private planes.
 
 The goal of this project is to use the <a href="https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses">the aviation accidents data from the NTSB </a> to provide a recommendation of 'low-risk' manufacturers and models, for both commercial and private planes, to a company expanding operations to the aircraft industry. 
@@ -98,7 +101,7 @@ Based on the information available in the NTSB aviation accident database and th
 
 ## For More Information:
 See the full analysis in the <a href="https://github.com/KBE25/risk_analysis/blob/main/accident_analysis.ipynb">Jupyter Notebook</a>.
-The business information can also be found in <a href="">this presentation </a> and this <a href="">Accident Analysis Dashboard</a>.
+The business information can also be found in <a href="https://github.com/KBE25/risk_analysis/blob/main/presentation.pdf">this presentation </a> and this <a href="">Accident Analysis Dashboard</a>.
 
 For additional info, contact Karina Basto-Eyzaguirre at karinabastoe@gmail.com.
 
@@ -107,7 +110,7 @@ For additional info, contact Karina Basto-Eyzaguirre at karinabastoe@gmail.com.
 - <a href="https://github.com/KBE25/risk_analysis/blob/main/.gitignore"> .gitignore </a>
 - <a href="https://github.com/KBE25/risk_analysis/blob/main/README.md"> README.md </a>
 - <a href="https://github.com/KBE25/risk_analysis/blob/main/accident_analysis.ipynb"> accident_analysis.ipynb </a>
-- <a href=""> presentation </a>
+- <a href="https://github.com/KBE25/risk_analysis/blob/main/presentation.pdf"> presentation </a>
 
 ### Resources
 - <a href="https://sites.lsa.umich.edu/mje/2024/05/08/comacs-impact-on-the-future-of-the-airbus-boeing-duopoly/#:~:text=For%20decades%2C%20two%20major%20firms,other%2060.4%25%20of%20the%20industry."> Comac's impact on the future of the Airbus-Boeing duopoly by the Michigan Journal of Economics </a>
