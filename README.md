@@ -6,11 +6,8 @@
 
 **Author: <a href="https://www.linkedin.com/in/karina-basto-eyzaguirre-203a0445/"> Karina Basto-Eyzaguirre</a>**
 
+
 ## Overview
-This notebook
-
-This project 
-
 This analysis has been conducted as my company has decided to diversify their business portfolio by expanding operations to the aircraft industry and purchasing commercial and private planes.
 
 The goal of this project is to use the <a href="https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses">the aviation accidents data from the NTSB </a> to provide a recommendation of 'low-risk' manufacturers and models, for both commercial and private planes, to a company expanding operations to the aircraft industry. 
@@ -42,15 +39,14 @@ Based on EDA, the key conclusions are the following:
 
 **Engine Type Analysis**
 
-- Reciprocating engines are generally safer for both private and commercial planes.
-- For Commercial Planes, Turbo-prop engines are also a viable option.
-- For Private Planes: Turbo-fan and Turbo-jet engines show potential.
+- For Commercial Planes, we should use Turbo Fan or Turbo Jet engines.
+- For Private Planes: Reciprocating, Turbo fan and Turbo Jet engines are the best options.
   
 **Number of Engines Analysis**
 
 - Commercial Planes: 3 engines have the lowest average fatality rate, while 2 engines have the highest number of accidents.
 - Private Planes: 1 engine has the highest number of accidents, but 3 engines have the lowest average fatality rate.
-- Based on the accident count and the mean fatality rate, the recommendation for private planes is 1 engine and for commercial planes with 1 or 2 engines.
+- Based on the accident count and the mean fatality rate, the recommendation for private planes is 1 engine and for commercial planes with 2 or 3 engines.
 - Correlation: Weak correlation between engine number and fatality rates for both commercial and private planes. This means that the number of engines do not really influence airplane safety.
 
 **Airplane Type and Aircraft Damage**
@@ -84,8 +80,8 @@ Based on the information available in the NTSB aviation accident database and th
 
 **Commercial Aircrafts**
 
-- Prioritize: Aircraft using Reciprocating or Turbo Prop engines.
-- Number of Engines: Consider 1 or 2 engines for optimal safety and accident rates.
+- Prioritize: Aircraft using Turbo Fan or Tubo Jet engines.
+- Number of Engines: Consider 2 or 3 engines for optimal safety and accident rates.
 - Airbus is the safest option, prioritizing models: A340 and A380 due to low fatality rates and accident count as well as A320 due to its safety and market popularity.
 
 ## Next Steps 
