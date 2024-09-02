@@ -7,9 +7,9 @@
 **Author: <a href="https://www.linkedin.com/in/karina-basto-eyzaguirre-203a0445/"> Karina Basto-Eyzaguirre</a>**
 
 ## Overview
-This analysis has been conducted as my company has decided to diversify their business portfolio by expanding operations to the aircraft industry and purchasing commercial and private planes.
+This analysis has been conducted as my company has decided to diversify their business portfolio by expanding operations to the aircraft industry.
 
-The goal of this project is to use the <a href="https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses">the aviation accidents data from the NTSB </a> to provide a recommendation of 'low-risk' manufacturers and models, for both commercial and private planes, to a company expanding operations to the aircraft industry. 
+The goal of this project is to use the <a href="https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses">the aviation accidents data from the NTSB </a> to provide a recommendation of 'low-risk' manufacturers and models, for both commercial and private planes, for the company to purchase.
 
 ## Business Understanding
 This analysis aims to identify low-risk aircrafts for a company wanting to enter the aviation industry by analyzing NTSB accident data from 1962 until 2023. The goal of this analyis is to identity risks for different aircraft manufacturers and model to be able to make a recommendation on which are the aircrafts with lowest risk to purchase within the commercial and private aircraft market.
@@ -17,21 +17,21 @@ This analysis aims to identify low-risk aircrafts for a company wanting to enter
 ## Data Understanding
 The <a href="https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses"> NTSB aviation accident database </a> contains  90,348 lines of aviation accidents, and 31 columns of information, for the United States between 1962 and 2003.
 
-This databse provides  valuable starting point for assesing aircraft safety as it provides reliable and comprehensive  data on aviation accidents, including detailed information about each incident.
+This databse provides a valuable starting point for assesing aircraft safety as it provides reliable and comprehensive data on aviation accidents, including detailed information about each incident.
 
 #### Data Limitations
 The data provides a skewed view to determine airplane safety as it only contains information regarding airplane accidents. This means we get an incomplete picture and are not able to properly analyze all the risk factors associated with commercial and private planes to provide a complete recommendation of which manufacturers and model are truly low-risk.
 
 ## Data Preparation
-To prepare the data fot this analysis, I follow these steps:
+To prepare the data for this analysis, I followed these steps:
 1. Cleaned the database by removing duplicate rows, removing unnecesary columns and managing missing values. The data cleaning was necessary to avoid double counting accidents and avoid skewed results.
 2. Converting columns to the correct data type.
 3. Feature engineering relevant data such as creating new columns like "Uninjured Rate" and "Fatality Injury Rate" to assess aircraft safety.
 
-To refine recommendations, I segregated the data into Commercial and Private categories due to their distinct characteristics and safety protocols. Considering the large number of manufacturers, by relying on external sources I limited my investigation to the top market leaders in each category.
+To refine recommendations, I segregated the data into Commercial and Private categories due to their distinct characteristics and safety protocols. Considering the large number of manufacturers, by relying on external sources, I limited my investigation to the top market leaders in each category.
 
 ## Exploratory Data Analysis
-Exploratory data analysis was conducted by leveraging accident count, "Uninjured Rate" and "Fatality Injury Rate" to determine the safest manufacturers and models for the commercial and private aircraft market. Additionally, based on the available information, I also determine the safest engine types and number of engines within and aircraft as well as looked into broad phase flight to understand if it played a role into aircraft safety.
+Exploratory data analysis was conducted by leveraging accident count, "Uninjured Rate" and "Fatality Injury Rate" to determine the safest manufacturers and models for the commercial and private aircraft market. Additionally, based on the available information, I also determine the safest engine types and number of engines within an aircraft as well as looked into broad phase flight to understand if it played a role into aircraft safety.
 
 ## Conclusions
 Based on EDA, the key conclusions are the following:
@@ -43,24 +43,21 @@ Based on EDA, the key conclusions are the following:
   
 **Number of Engines Analysis**
 
-- Commercial Planes: 3 engines have the lowest average fatality rate, while 2 engines have the highest number of accidents.
-- Private Planes: 1 engine has the highest number of accidents, but 3 engines have the lowest average fatality rate.
-- Based on the accident count and the mean fatality rate, the recommendation for private planes is 1 engine and for commercial planes with 2 or 3 engines.
-- Correlation: Weak correlation between engine number and fatality rates for both commercial and private planes. This means that the number of engines do not really influence airplane safety.
+The conclusion is that aicraftst are safest with the following number of engines, for private planes is 1 engine and for commercial planes with 2 or 3 engines.
 
 **Airplane Type and Aircraft Damage**
 
-For Private Planes, the damage is either substantial or destroyed while for Commercial planes the damage is either substantial or unknown. Based on this information we can conclude that commercial planes see less aircraft damager severity as these are arger and more robust, and probably with advanced safety features.
+For Private Planes, the damage is either substantial or destroyed while for Commercial planes the damage is either substantial or unknown. Based on this information we can conclude that commercial planes see less aircraft damage severity as these are arger and more robust, and probably with more advanced safety features.
 
 **Private Planes Analysis**
 
-- Based on accident count and fatality rate the safest manufacturers are Bombardier and Dassault, with specific models like BD700, 35A, FALCON 900, and FALCON 10.
-- Considering the number of engines, Bombardier's CL600, with 1 engine, is a strong recommendation.
+- Based on accident count and fatality rate the safest manufacturers are Bombardier and Dassault, with specific models: BD700, 35A, FALCON 900, and FALCON 10.
+- Based on the number of engines, Bombardier's CL600, with 1 engine, is a strong recommendation.
 
 **Commercial Planes Analysis**
 
 - Based on accident count and fatality rate the safest manufacturer is Airbus, with models like A310, A380, AF46, A340, and A320.
-- Considering the number of engines, model A320 with 1 engine is a strong recommendation.
+- Considering the engine type and number of engines the best model is A320 with Turbo Fan Engine and 2 engines. 
 
 **Broad Phase of Flight Analysis**
 
@@ -75,12 +72,12 @@ Based on the information available in the NTSB aviation accident database and th
 - Number of Engines: Opt for aircraft with 1 engine for the lowest fatality rates.
 - Manufacturers:
 1. Bombardier, specific models: 35A, BD100, and CL600.
-2. Dassaultm specific models: FALCON 10 and FALCON 900.
+2. Dassault, specific models: FALCON 10 and FALCON 900.
 
 **Commercial Aircrafts**
 
 - Prioritize: Aircraft using Turbo Fan or Tubo Jet engines.
-- Number of Engines: Consider 2 or 3 engines for optimal safety and accident rates.
+- Number of Engines: Consider 2 or 3 engines for optimal safetys.
 - Airbus is the safest option, prioritizing models: A340 and A380 due to low fatality rates and accident count as well as A320 due to its safety and market popularity.
 
 ## Next Steps 
